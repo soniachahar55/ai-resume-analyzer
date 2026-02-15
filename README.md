@@ -1,5 +1,12 @@
 🚀 AI Resume Analyzer
 
+
+
+
+
+
+
+
 An intelligent web application that analyzes resumes based on selected job roles and provides a skill match score with improvement suggestions.
 
 Built using React (Frontend) and Flask (Backend).
@@ -7,12 +14,19 @@ Built using React (Frontend) and Flask (Backend).
 📌 Features
 
 ✅ User Authentication (Register / Login)
+
 ✅ Resume Text Analysis
+
 ✅ PDF & DOCX Resume Upload Support
+
 ✅ Role-Based Skill Matching
+
 ✅ Match Score Calculation
+
 ✅ Personalized Feedback Message
+
 ✅ Resume Analysis History Tracking
+
 ✅ Clean and Responsive UI
 
 🧠 How It Works
@@ -42,7 +56,7 @@ Displays missing and found skills
 All analyses are stored in user history.
 
 🛠️ Tech Stack
-Frontend
+🔹 Frontend
 
 React
 
@@ -54,7 +68,7 @@ JavaScript
 
 CSS
 
-Backend
+🔹 Backend
 
 Flask
 
@@ -80,7 +94,7 @@ ai-resume-analyzer/
 
 ⚙️ Installation & Setup
 1️⃣ Clone Repository
-git clone https://github.com/your-username/ai-resume-analyzer.git
+git clone https://github.com/soniachahar55/ai-resume-analyzer.git
 cd ai-resume-analyzer
 
 2️⃣ Backend Setup
@@ -91,8 +105,7 @@ python app.py
 
 
 Backend runs at:
-
-http://127.0.0.1:5000
+👉 http://127.0.0.1:5000
 
 3️⃣ Frontend Setup
 cd frontend
@@ -101,8 +114,7 @@ npm start
 
 
 Frontend runs at:
-
-http://localhost:3000
+👉 http://localhost:3000
 
 📊 Resume Scoring Logic
 
@@ -112,28 +124,28 @@ Compares resume skills with predefined role skill sets
 
 Calculates percentage match
 
-Classifies results:
-
+📈 Score Classification
 Score Range	Feedback
 80%+	Excellent Match
 50%–79%	Good Match – Improve Missing Skills
 Below 50%	Resume Needs Improvement
 📌 Future Improvements
 
-JWT Authentication
+🔐 JWT Authentication
 
-Database Integration (MongoDB)
+🗄 Database Integration (MongoDB)
 
-Advanced NLP-based Skill Detection
+🤖 Advanced NLP-based Skill Detection
 
-Deployment (Render / Vercel)
+🌍 Deployment (Render / Vercel)
 
-Downloadable PDF Report
+📄 Downloadable PDF Report
 
 👩‍💻 Author
 
-Developed by Sonia Chahar
+Sonia Chahar
+GitHub: https://github.com/soniachahar55
 
-⭐ If you like this project
+⭐ Support
 
-Give it a ⭐ on GitHub!
+If you like this project, give it a ⭐ on GitHub!
