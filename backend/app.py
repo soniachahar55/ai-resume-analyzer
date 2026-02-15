@@ -90,5 +90,36 @@ def get_history(email):
     user_history = [h for h in analysis_history if h["email"] == email]
     return jsonify(user_history)
 
+# ---------------- AUTH ROUTES ----------------
+
+@app.route('/api/auth/register', methods=['POST'])
+def register():
+    data = request.json
+    email = data.get("email")
+    password = data.get("password")
+
+    if not email or not password:
+        return jsonify({"error": "Email and password required"}), 400
+
+    if any(u["email"] == email for u in users):
+        return jsonify({"error": "User already exists"}), 400
+
+    users.append({"email": email, "password": password})
+    return jsonify({"message": "Registered successfully"}), 200
+
+
+@app.route('/api/auth/login', methods=['POST'])
+def login():
+    data = request.json
+    email = data.get("email")
+    password = data.get("password")
+
+    user = next((u for u in users if u["email"] == email and u["password"] == password), None)
+
+    if user:
+        return jsonify({"message": "Login successful"}), 200
+
+    return jsonify({"error": "Invalid credentials"}), 401
+
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
