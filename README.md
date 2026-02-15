@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+🚀 AI Resume Analyzer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An intelligent web application that analyzes resumes based on selected job roles and provides a skill match score with improvement suggestions.
 
-## Available Scripts
+Built using React (Frontend) and Flask (Backend).
 
-In the project directory, you can run:
+📌 Features
 
-### `npm start`
+✅ User Authentication (Register / Login)
+✅ Resume Text Analysis
+✅ PDF & DOCX Resume Upload Support
+✅ Role-Based Skill Matching
+✅ Match Score Calculation
+✅ Personalized Feedback Message
+✅ Resume Analysis History Tracking
+✅ Clean and Responsive UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🧠 How It Works
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+User registers and logs in.
 
-### `npm test`
+User selects a target role:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Frontend
 
-### `npm run build`
+Backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Fullstack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+User uploads a resume (PDF/DOCX) or pastes resume text.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The system:
 
-### `npm run eject`
+Extracts resume content
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Matches skills using keyword detection
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Calculates a match score
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Displays missing and found skills
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+All analyses are stored in user history.
 
-## Learn More
+🛠️ Tech Stack
+Frontend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+React
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React Router
 
-### Code Splitting
+Axios
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+JavaScript
 
-### Analyzing the Bundle Size
+CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Backend
 
-### Making a Progressive Web App
+Flask
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Flask-CORS
 
-### Advanced Configuration
+PyPDF2
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+docx2txt
 
-### Deployment
+Python
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+📂 Project Structure
+ai-resume-analyzer/
+│
+├── backend/
+│   ├── app.py
+│
+├── frontend/
+│   ├── src/
+│   ├── package.json
+│
+└── README.md
 
-### `npm run build` fails to minify
+⚙️ Installation & Setup
+1️⃣ Clone Repository
+git clone https://github.com/your-username/ai-resume-analyzer.git
+cd ai-resume-analyzer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2️⃣ Backend Setup
+cd backend
+python -m venv venv
+pip install flask flask-cors PyPDF2 docx2txt
+python app.py
+
+
+Backend runs at:
+
+http://127.0.0.1:5000
+
+3️⃣ Frontend Setup
+cd frontend
+npm install
+npm start
+
+
+Frontend runs at:
+
+http://localhost:3000
+
+📊 Resume Scoring Logic
+
+The system:
+
+Compares resume skills with predefined role skill sets
+
+Calculates percentage match
+
+Classifies results:
+
+Score Range	Feedback
+80%+	Excellent Match
+50%–79%	Good Match – Improve Missing Skills
+Below 50%	Resume Needs Improvement
+📌 Future Improvements
+
+JWT Authentication
+
+Database Integration (MongoDB)
+
+Advanced NLP-based Skill Detection
+
+Deployment (Render / Vercel)
+
+Downloadable PDF Report
+
+👩‍💻 Author
+
+Developed by Sonia Chahar
+
+⭐ If you like this project
+
+Give it a ⭐ on GitHub!
