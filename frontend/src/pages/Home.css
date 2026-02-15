@@ -1,0 +1,108 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 40px 20px;
+}
+
+.analyzer-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #333;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.file-input {
+  margin-bottom: 10px;
+}
+
+.file-name {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.resume-textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  resize: none;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.resume-textarea:focus {
+  outline: none;
+  border: 1px solid #667eea;
+}
+
+.analyze-btn {
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.analyze-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn {
+  margin-bottom: 20px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.result-section {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.skills-container {
+  margin-bottom: 20px;
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.skill-badge.found {
+  background: #e6f4ea;
+  color: #1e7e34;
+}
+
+.skill-badge.missing {
+  background: #fdecea;
+  color: #b02a37;
+}
